@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'nino';
+		src: url('/fonts/nino.otf') format('opentype');
+	}
+	@font-face {
+		font-family: 'Contractica';
+		src: url('/fonts/contractica/TBCContracticaCAPS-Regular.ttf') format('truetype'),
+			url('/fonts/contractica/TBCContractica-Bold.ttf') format('truetype'),
+			url('/fonts/contractica/TBCContracticaCAPS-Light.ttf') format('truetype');
+	}
+}
