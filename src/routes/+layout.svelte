@@ -1,6 +1,5 @@
 <script>
 	import '$lib/app.css';
-	const imgURL = new URL('$lib/assets/BGIMG.png', import.meta.url).href;
 </script>
 
 <svelte:head>
@@ -13,7 +12,7 @@
 </svelte:head>
 
 <div
-	style:background-image="url({imgURL})"
+	style:background-image="url('BGIMG.png')"
 	class="h-screen w-full bg-center bg-no-repeat bg-cover overflow-hidden"
 >
 	<slot />
