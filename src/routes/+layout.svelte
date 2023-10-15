@@ -6,14 +6,18 @@
 	<title>ITFixer - PC Services</title>
 	<meta
 		name="description"
-		content="გაქვთ კომპიუტერული პრობლემები? დაგვირეკეთ! შეაკეთეთ კომპიუტერი და ისარგებლეთ სხვა სერვისებით!"
+		content="ხარისხიანი სერვისი ჩვენი პრიორიტეტია ითანამშრომლე ჩვენთან, იყავი მშვიდად!"
 	/>
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+	<meta
+		name="keywords"
+		content="ვინდოუსის გადაყენება, ოფისის ჩაწერა, პროგრამების ჩაწერა, კომპიუტერის შეკეთება, kompiuteris xelosani, კომპიუტერის ხელოსანი, ფოტოშოპის ჩაწერა"
+	/>
 </svelte:head>
 
 <div
 	style:background-image="url('BGIMG.png')"
-	class="h-screen w-full bg-center bg-no-repeat bg-cover overflow-hidden"
+	class="h-screen w-full bg-center bg-no-repeat bg-cover overflow-hidden bg-[rgb(30,31,43)]"
 >
 	<slot />
 </div>

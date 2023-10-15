@@ -13,4 +13,9 @@
 			url('/fonts/contractica/TBCContractica-Bold.ttf') format('truetype'),
 			url('/fonts/contractica/TBCContracticaCAPS-Light.ttf') format('truetype');
 	}
+	* {
+		@apply scrollbar;
+		@apply scrollbar-thumb-white;
+		@apply scrollbar-thumb-rounded-full;
+	}
 }

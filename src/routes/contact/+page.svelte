@@ -20,12 +20,12 @@
 	let response = { success: false, message: '' };
 	const emailFilter = '[^@\\s]+@[^@\\s]+\\.[^@\\s]+';
 	const phoneFilter = '[0-9]{9}';
-	const copyClick = (event: Event) => {
+	const copyClick = async (event: Event) => {
 		const target = event.target as HTMLButtonElement;
 		if (!target.textContent) {
 			return;
 		}
-
+		const res = await navigator.clipboard.writeText(target.textContent);
 		alert('დაკოპირდა: ' + target.textContent);
 	};
 	const changeValue = (event: Event) => {
@@ -87,7 +87,7 @@
 					<div class="flex flex-col gap-10">
 						<div class="flex text-sm justify-left items-center gap-5">
 							<img class="w-7" src={phone} alt="Phone Icon" />
-							<p>599 02 62 35</p>
+							<button on:click={copyClick}>599 02 62 35</button>
 						</div>
 						<div class="flex text-sm justify-left items-center gap-5">
 							<img class="w-7" src={email} alt="Email Icon" />
@@ -95,7 +95,7 @@
 						</div>
 						<div class="flex text-sm justify-left items-center gap-5">
 							<img class="w-7" src={location} alt="Location Icon" />
-							<p>Marjanishvili's Street</p>
+							<button on:click={copyClick}>Tamar Mepe Avenue</button>
 						</div>
 					</div>
 					<div class="flex flex-row w-full justify-between">
@@ -106,7 +106,7 @@
 							<a target="_blank" href="https://wa.me/995599026235"
 								><img src={whatsapp} alt="whatsapp" /></a
 							>
-							<a target="_blank" href="https://t.me/David0100101"
+							<a target="_blank" href="https://t.me/itfixer"
 								><img src={telegram} alt="telegram" /></a
 							>
 						</div>
@@ -115,22 +115,22 @@
 				</div>
 				<form
 					on:submit={handleFormSubmit}
-					class="flex flex-col gap-y-16 justify-center items-center flex-grow px-5 md:px-8 py-10"
+					class="flex flex-col gap-y-16 justify-center items-center flex-grow px-5 mb-10 md:px-8 py-10"
 				>
 					<div
 						class=" md:hidden flex gap-5 text-xs flex-col bg-[#000322] p-5 rounded-xl justify-start w-full text-white"
 					>
 						<div class="flex justify-left items-center gap-2">
 							<img class="w-7" src={phone} alt="Phone Icon" />
-							<p>599123456</p>
+							<button type="button" on:click={copyClick}>599 02 62 35</button>
 						</div>
 						<div class="flex justify-left items-center gap-2">
 							<img class="w-7" src={email} alt="Email Icon" />
-							<button on:click={copyClick}>itfixer@gmail.com</button>
+							<button type="button" on:click={copyClick}>itfixer@gmail.com</button>
 						</div>
 						<div class="flex justify-left items-center gap-2">
 							<img class="w-7" src={location} alt="Location Icon" />
-							<p>Marjanishvili's Street</p>
+							<button type="button" on:click={copyClick}>Tamar Mepe Avenue</button>
 						</div>
 					</div>
 					<div class="flex gap-5 flex-shrink w-full">
@@ -189,7 +189,7 @@
 							<a target="_blank" href="https://wa.me/995599026235"
 								><img src={whatsapp} alt="whatsapp" /></a
 							>
-							<a target="_blank" href="https://t.me/David0100101"
+							<a target="_blank" href="https://t.me/itfixer"
 								><img src={telegram} alt="telegram" /></a
 							>
 						</div>
