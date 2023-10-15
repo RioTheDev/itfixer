@@ -8,6 +8,7 @@
 	import whatsapp from '$lib/assets/contacts/whatsapp.svg';
 	import telegram from '$lib/assets/contacts/telegram.svg';
 	import logo from '$lib/assets/Logo.png';
+  
 	const info = {
 		firstName: '',
 		lastName: '',
