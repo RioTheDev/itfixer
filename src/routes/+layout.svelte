@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>ITFixer - PC Services</title>
+	<title>ITFixer - კომპიუტერული სერვისი</title>
 	<meta
 		name="description"
 		content="ხარისხიანი სერვისი ჩვენი პრიორიტეტია ითანამშრომლე ჩვენთან, იყავი მშვიდად!"

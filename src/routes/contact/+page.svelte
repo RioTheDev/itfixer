@@ -14,7 +14,7 @@
 		email: '',
 		phone: '',
 		message: '',
-		accessKey: 'bbea5cd9-90be-423f-a73b-e347cd40d7a7'
+		accessKey: '83b3d53e-d4d4-47bd-b1b0-6b23f6abb95b'
 	};
 	let sent = false;
 	let response = { success: false, message: '' };
@@ -91,7 +91,7 @@
 						</div>
 						<div class="flex text-sm justify-left items-center gap-5">
 							<img class="w-7" src={email} alt="Email Icon" />
-							<button on:click={copyClick}>itfixer@gmail.com</button>
+							<button on:click={copyClick}>itfixer6@gmail.com</button>
 						</div>
 						<div class="flex text-sm justify-left items-center gap-5">
 							<img class="w-7" src={location} alt="Location Icon" />
@@ -126,7 +126,7 @@
 						</div>
 						<div class="flex justify-left items-center gap-2">
 							<img class="w-7" src={email} alt="Email Icon" />
-							<button type="button" on:click={copyClick}>itfixer@gmail.com</button>
+							<button type="button" on:click={copyClick}>itfixer6@gmail.com</button>
 						</div>
 						<div class="flex justify-left items-center gap-2">
 							<img class="w-7" src={location} alt="Location Icon" />
