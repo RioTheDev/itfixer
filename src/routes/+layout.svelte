@@ -8,6 +8,7 @@
 		name="description"
 		content="ხარისხიანი სერვისი ჩვენი პრიორიტეტია ითანამშრომლე ჩვენთან, იყავი მშვიდად!"
 	/>
+	<meta name="image" content="https://www.itfixer.ge/LogoHD.png" />
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
 	<meta
 		name="keywords"
